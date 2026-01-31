@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Mentor Caring - Mukeem Shaikh Sir</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: rgba(255,255,255,0.9); padding: 20px; text-align: center; border-radius: 10px; margin-bottom: 30px; }
+        h1 { color: #2c3e50; font-size: 2.5em; margin-bottom: 10px; }
+        .mentor-info { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin: 20px 0; }
+        .mentor-info h2 { color: #27ae60; }
+        .description { text-align: center; font-size: 1.2em; margin: 30px 0; color: white; }
+        .form-section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        form { display: grid; gap: 15px; max-width: 600px; margin: 0 auto; }
+        input, select, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; }
+        input:focus, textarea:focus { outline: none; border-color: #667eea; }
+        button { background: #27ae60; color: white; padding: 15px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #219a52; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        footer { text-align: center; margin-top: 40px; color: white; }
+        @media (max-width: 768px) { h1 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Personal Mentor Caring 🌟</h1>
+            <p>Students ke liye daily targets, aspirations update aur weekly online meetings – Parents jaise care!</p>
+        </header>
+
+        <div class="mentor-info">
+            <h2>👨‍🏫 Your Mentor: MUKEEM SHAIKH SIR (Mentor Flow)</h2>
+            <p><strong>Contact:</strong> 6391267680</p>
+            <p><strong>Address:</strong> Kota, Rajasthan</p>
+            <p>Join karo aur apne goals achieve karo! 🚀</p>
+        </div>
+
+        <div class="description">
+            Platform jahaan students register karenge, daily targets update karenge, aspirations share karenge. Main (Sir) sab check karunga aur weekly 1 online meeting lunga.
+        </div>
+
+        <div class="form-section">
+            <h2>📝 Student Registration</h2>
+            <form id="regForm" onsubmit="handleSubmit(event)">
+                <div class="grid">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Father's Name" required>
+                    <input type="text" placeholder="Mother's Name" required>
+                </div>
+                <input type="date" placeholder="Date of Birth" required>
+                <input type="text" placeholder="Class (e.g., 10th, 12th)" required>
+                <input type="text" placeholder="Aspiration (e.g., IIT, Doctor)" required>
+                <input type="text" placeholder="Address" required>
+                <input type="tel" placeholder="Contact Number" required>
+                <input type="email" placeholder="Email ID" required>
+                <textarea placeholder="Any other details (e.g., current targets, issues)" rows="4"></textarea>
+                <button type="submit">Register Now! 🎯</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Personal Mentor Caring by Mukeem Shaikh Sir. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Registration successful! Main (Mukeem Shaikh Sir) jaldi contact karunga. WhatsApp: 6391267680');
+            document.getElementById('regForm').reset();
+        }
+    </script>
+</body>
+</html>
